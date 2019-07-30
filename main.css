@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #003366;
+  margin: 0;
+}
+header{
+  display: flex;
+  background-color: black;
+  color: #ff4040;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.nav{
+  list-style: none;
+  float: right;
+  margin: 0;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.navname{
+  float: left;
+  margin: 0;
+  font-size: 3rem;
+  padding: 10px 0;
+  font-family: 'Lobster', cursive;
+}
+
+nav li {
+display: inline-block;
+margin-left: 70px;
+padding-top: 33px;
+font-size: 1.3rem;
+position: relative;
+}
+
+nav a{
+  color: #003366;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+nav a:hover{
+  color: #194775;
+}
+
+nav a::before{
+  content: " ";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #003366;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+.elcucuy{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.cucuy{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff4040;
+  font-size: 10rem;
+  font-family: 'Butcherman', cursive;
+  opacity: .4;
+}
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "a a a"
+  "b c d";
+  margin: 2rem 0;
+}
+.statheader{
+  grid-area: a;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 2.8rem;
+}
+.winStreak{
+  grid-area: b;
+  padding: 1rem;
+  margin: auto;
+}
+
+.winsKo{
+  grid-area: c;
+  padding: 1rem;
+  margin: auto;
+}
+
+.winsSub{
+  grid-area: d;
+  padding: 1rem;
+  margin: auto;
+}
+
+.number{
+  font-weight: bolder;
+  font-size: 2.8rem;
+  padding: 0 2rem;
+  margin: 0;
+
+
+}
+
+.numberText{
+  color: #7f99b2;
+}
+
+table, th, td{
+  border: 1px solid black;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+th{
+  height: 30px;
+  background-color: #325b84;
+  padding: 10px;
+}
+
+table{
+  width: 100%;
+}
+
+td{
+  text-align: center;
+  padding: 10px;
+}
+tr:hover{
+  background-color: #b2c1d1;
+}
+tr{
+  background-color: #6684a3;
+}
+#cso{
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #CFB53B;
+}
+
+.champ{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 5px;
+  grid-template-areas:
+  "a b c";
+}
+#champ1{
+  grid-area: a;
+}
+#champ2{
+  grid-area: b;
+}
+#champ3{
+  grid-area: c;
+}
+
+.fit{
+  width: 100%;
+  height: 100%;
+}
+
+.quote{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  color: #7f99b2;
+}
+
+#winning{
+  text-align: center;
+  font-size: 1.2rem
+}
+#interim{
+  text-align: center;
+}
+
+#aftermath{
+  text-align: center;
+  color: #ff4040;
+  font-family: 'Butcherman', cursive;
+  font-size: 3rem;
+}
+.faces{
+  display: grid;
+  max-height: 350px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas:
+  "a b c"
+  "d e f"
+  "g g g";
+}
+
+.face1{
+  grid-area: a;
+}
+.face2{
+  grid-area: b;
+}
+.face3{
+  grid-area: c;
+}
+.face4{
+  grid-area: d;
+}
+.face5{
+  grid-area: e;
+}
+.face6{
+  grid-area: f;
+}
+.face7{
+  grid-area: g;
+}
+
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+}
